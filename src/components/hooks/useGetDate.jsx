@@ -41,7 +41,7 @@ const useGetDate = () => {
         e.preventDefault();
         //para aregarle espacios a la variable de la url
         let ciudad = new URLSearchParams(state.ciudad).toString();
-        setUrl(`http://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=1&appid=ccd9c754eecdd2f591303fed4ef3051b`)
+        setUrl(`https://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=1&appid=ccd9c754eecdd2f591303fed4ef3051b`)
     }
     
   return {

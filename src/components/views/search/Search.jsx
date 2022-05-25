@@ -13,6 +13,10 @@ const Search = () => {
     setIsSearchOpen
   }=useContext(SearchContext)
   return (
+    // HACER EL GIT PUSH AHORA NO TENGO WIFI
+    
+    //
+    //
     <div className={`${moduleSearch.divPrincipal} ${setIsSearchOpen ? moduleSearch.divTrue : ""}`}>
       <p onClick={() => setIsSearchOpen(false)} className={moduleSearch.cancelar}>X</p>
       <form onSubmit={handleSubmit} className={moduleSearch.formulario}>
