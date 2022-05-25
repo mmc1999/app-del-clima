@@ -8,7 +8,7 @@ const useGetDate = () => {
     const [state, setState] = useState(initialValues);
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(false);
-    const [url, setUrl] = useState(`http://api.openweathermap.org/geo/1.0/direct?q=london&limit=1&appid=ccd9c754eecdd2f591303fed4ef3051b`)
+    const [url, setUrl] = useState(`https://api.openweathermap.org/geo/1.0/direct?q=london&limit=1&appid=ccd9c754eecdd2f591303fed4ef3051b`)
 
     const getData = async () => {
         try {
