@@ -1,0 +1,41 @@
+.divPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0px;
+   
+}
+
+.divCaracDelDia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.divCaracDelDia > * {
+    margin: 0%;
+    color: #E7E7EB;
+}
+.iconoClima {
+    width: 150px;
+}
+.temperatura {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0px;
+}
+.descripcionDia {
+    font-size: 18px;
+    font-weight: 600;
+}
+.farenheaitCelsius {
+    font-size: 25px;
+    color: gray;
+}
+.iconoUbicacion {
+    width: 15px;
+    filter: invert(1);
+}

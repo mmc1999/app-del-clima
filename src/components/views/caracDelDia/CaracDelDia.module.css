@@ -1,0 +1,42 @@
+.sectionCarac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.divPrincipal {
+    background: #1E213A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.divPrincipal > * {
+    color: #E7E7EB;
+}
+.beforeSpan {
+    font-size: 20px;
+    text-align: center;
+}
+.span {
+    font-size: 40px;
+}
+.divProgresoHumedad {
+    display: flex;
+    flex-direction: column;
+}
+.divProgresoHumedad > *{
+    margin: 0%;
+}
+.divProgresoHumedad > p {
+    align-self: flex-end;
+}
+.divPorcentaje {
+    display: flex;
+    justify-content: space-between;
+}
+.divPorcentaje > * {
+    margin: 0%;
+    font-size: 12px;
+}

@@ -1,0 +1,28 @@
+.divPrincipal {
+    background: #1E213A;
+    padding: 20px;
+    width: 120px;
+}
+.divPrincipal > * {
+    margin: 0%;
+    color: #E7E7EB;
+}
+.divTempMaxMin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.divTempMaxMin > * {
+    margin: 0%;
+    font-size: 12px;
+}
+.tempMax {
+    font-size: 14px;
+    line-height: 19px;
+    color: #E7E7EB;
+}
+.tempMin {
+    font-size: 14px;
+    line-height: 19px;
+    color: #A09FB1;
+}
