@@ -1,27 +1,32 @@
+import { useContext } from 'react';
+import { SearchContext } from '../../context/searchClose';
 import useGetDate from '../../hooks/useGetDate'
-import ResultadoBusqueda from '../resultadoBusqueda/ResultadoBusqueda'
+import moduleSearch from "./Search.module.css"
 
 const Search = () => {
   let {
     handleChange,
     handleSubmit,
     state,
-    loading,
-    data,
-  } = useGetDate()
+  } = useGetDate();
+  let {
+    setIsSearchOpen
+  }=useContext(SearchContext)
   return (
-    <>
-      <form onSubmit={handleSubmit}>
+    <div className={`${moduleSearch.divPrincipal} ${setIsSearchOpen ? moduleSearch.divTrue : ""}`}>
+      <p onClick={() => setIsSearchOpen(false)} className={moduleSearch.cancelar}>X</p>
+      <form onSubmit={handleSubmit} className={moduleSearch.formulario}>
         <input
           type="text"
           name="ciudad"
           value={state.ciudad}
           onChange={handleChange}
+          className={moduleSearch.input}
+          placeholder="Search location"
         />
         <button>Buscar</button>
       </form>
-      <ResultadoBusqueda data={data} state={state} /> 
-    </>
+    </div>
     
   )
 }

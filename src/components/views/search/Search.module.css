@@ -1,0 +1,44 @@
+.divPrincipal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    background-color: 
+    #1E213A;
+    left: -100%;
+    transition: left 0.5s ease;
+    padding: 20px;
+}
+.divTrue {
+    left: 0%;
+    transition: left 0.5s ease;
+}
+.cancelar {
+    text-align: right;
+    color: #E7E7EB;
+}
+.formulario {
+    display: flex;
+    gap: 20px;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #E7E7EB;
+    padding-left: 30px;
+    position: relative;
+}
+.input::after {
+    content: "Dddccccccccccccccccc";
+    /*content: url("../../../iconos/lupa.png");*/
+    background-color: aqua;
+    position: absolute;
+    color: aliceblue;
+}
+.boton {
+    background-color: #3C47E9;
+    color: white;
+}
