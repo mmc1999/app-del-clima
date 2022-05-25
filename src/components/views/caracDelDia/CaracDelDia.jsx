@@ -2,7 +2,6 @@ import React from 'react';
 import moduleCarac from "./CaracDelDia.module.css"
 
 const CaracDelDia = ({el}) => {
-    console.log(el)
   return (
       <section className={moduleCarac.sectionCarac}>
         <div className={moduleCarac.divPrincipal}>

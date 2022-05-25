@@ -1,22 +1,15 @@
 import { useContext } from 'react';
 import { SearchContext } from '../../context/searchClose';
-import useGetDate from '../../hooks/useGetDate'
 import moduleSearch from "./Search.module.css"
 
 const Search = () => {
   let {
+    setIsSearchOpen,
     handleChange,
     handleSubmit,
     state,
-  } = useGetDate();
-  let {
-    setIsSearchOpen
   }=useContext(SearchContext)
   return (
-    // HACER EL GIT PUSH AHORA NO TENGO WIFI
-    
-    //
-    //
     <div className={`${moduleSearch.divPrincipal} ${setIsSearchOpen ? moduleSearch.divTrue : ""}`}>
       <p onClick={() => setIsSearchOpen(false)} className={moduleSearch.cancelar}>X</p>
       <form onSubmit={handleSubmit} className={moduleSearch.formulario}>
@@ -28,7 +21,7 @@ const Search = () => {
           className={moduleSearch.input}
           placeholder="Search location"
         />
-        <button>Buscar</button>
+        <button className={moduleSearch.boton}>Search</button>
       </form>
     </div>
     
