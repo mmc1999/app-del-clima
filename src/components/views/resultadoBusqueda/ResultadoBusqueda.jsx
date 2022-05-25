@@ -13,7 +13,7 @@ const ResultadoBusqueda = ({data, state}) => {
             <img src={`http://openweathermap.org/img/wn/${data?.current?.weather[0]?.icon}@2x.png`} alt='icono del clima' className={moduleResultado.iconoClima} />
             <div className={moduleResultado.divCaracDelDia}>
                 <p className={moduleResultado.temperatura}>
-                  {data?.current?.temp}
+                  {data?.current?.temp.toFixed(0)}
                   <span className={moduleResultado.farenheaitCelsius}>°C</span>
                 </p>
                 <p className={moduleResultado.descripcionDia}>{data?.current?.weather[0].description}</p>
