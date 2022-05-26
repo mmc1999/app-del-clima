@@ -26,3 +26,16 @@
     line-height: 19px;
     color: #A09FB1;
 }
+@media all and (min-width:1100px) {
+    .divPrincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .divTempMaxMin {
+        width: 50%;
+        justify-content: space-between;
+    }
+}

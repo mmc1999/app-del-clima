@@ -26,7 +26,7 @@ const ResultadoOtrasCarac = ({data}) => {
                 : array.map(el => 
                     <CaracDelDia key={el} el={el} />    
                 )
-            }
+            }    
         </div>
     </section>
   )

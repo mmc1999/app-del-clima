@@ -11,6 +11,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    width: 100%;
 }
 .divPrincipal > * {
     color: #E7E7EB;
@@ -39,4 +40,11 @@
 .divPorcentaje > * {
     margin: 0%;
     font-size: 12px;
+}
+@media all and (min-width:600px) {
+    .sectionCarac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
 }

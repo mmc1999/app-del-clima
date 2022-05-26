@@ -38,4 +38,28 @@
 .iconoUbicacion {
     width: 15px;
     filter: invert(1);
+    margin-right: 5px;
+}
+@media all and (min-width:1100px) {
+    .divPrincipal {
+        height: auto;
+    }
+    .iconoClima {
+        width: 180px;
+    }
+    .temperatura {
+        font-size: 80px;
+    }
+    .descripcionDia {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .farenheaitCelsius {
+        font-size: 35px;
+        color: gray;
+    }
+    .iconoUbicacion {
+        width: 15px;
+        filter: invert(1);
+    }
 }

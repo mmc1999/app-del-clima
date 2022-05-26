@@ -1,7 +1,6 @@
 import React from 'react';
 import moduleResultado from "./resultadoBusqueda.module.css";
 import iconoUbicacion from "../../../iconos/mapa.png"
-import ResultadoOtrasCarac from '../resultadoOtrasCarac/ResultadoOtrasCarac';
 
 const ResultadoBusqueda = ({data, state}) => {
   //Primer letra en mayuscula para la ubicacion del clima
@@ -21,7 +20,6 @@ const ResultadoBusqueda = ({data, state}) => {
                 <p><img src={iconoUbicacion} alt="Icono de precision" className={moduleResultado.iconoUbicacion} />{ubicacionMayus || "London"}</p>
             </div>
         </div>
-        <ResultadoOtrasCarac data={data} />
     </>    
   )
 }
