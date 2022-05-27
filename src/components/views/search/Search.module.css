@@ -17,6 +17,7 @@
 .cancelar {
     text-align: right;
     color: #E7E7EB;
+    cursor: pointer;
 }
 .formulario {
     display: flex;
