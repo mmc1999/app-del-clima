@@ -5,12 +5,13 @@ import moduleSearch from "./Search.module.css"
 const Search = () => {
   let {
     setIsSearchOpen,
+    isSearchOpen,
     handleChange,
     handleSubmit,
     state,
   }=useContext(SearchContext)
   return (
-    <div className={`${moduleSearch.divPrincipal} ${setIsSearchOpen ? moduleSearch.divTrue : ""}`}>
+    <div className={`${moduleSearch.divPrincipal} ${isSearchOpen && moduleSearch.divTrue}`}>
       <p onClick={() => setIsSearchOpen(false)} className={moduleSearch.cancelar}>X</p>
       <form onSubmit={handleSubmit} className={moduleSearch.formulario}>
         <input

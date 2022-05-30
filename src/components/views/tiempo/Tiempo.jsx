@@ -24,9 +24,8 @@ const Tiempo = () => {
         <button className={moduleTiempo.boton} onClick={() => setIsSearchOpen(true)}>Search for places</button>
         <img src={imagenPrecision} alt="Icono de precision" className={moduleTiempo.iconoPrecision} />
         {
-          isSearchOpen
-          ? <Search />
-          : ""
+          isSearchOpen && <Search />
+          
         }
       </div>
       <div className={moduleTiempo.divResultado}>

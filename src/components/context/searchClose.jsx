@@ -23,7 +23,7 @@ const SearchProvider = ({ children }) => {
                 const data2 = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${res1[0].lat}&lon=${res1[0].lon}&exclude=hourly,minutely&appid=ccd9c754eecdd2f591303fed4ef3051b&units=metric`)
                 const res2 = await data2.json();
                 console.log(res1)
-                setUbicacion(`${res1[0].name}, ${res1[0].state}`)
+                setUbicacion(`${res1[0].name}, ${res1[0].country}`)
                 await Promise.all([res2])
                     .then(value => {
                         setData(value[0])
