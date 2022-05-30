@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import imagenPrecision from "../../../iconos/precision.png"
 import { SearchContext } from '../../context/searchClose';
+import Footer from '../footer/Footer';
 import Loader from '../loader/Loader';
 import ResultadoBusqueda from '../resultadoBusqueda/ResultadoBusqueda';
 import ResultadoOtrasCarac from '../resultadoOtrasCarac/ResultadoOtrasCarac';
@@ -17,7 +18,8 @@ const Tiempo = () => {
   }=useContext(SearchContext)
   
   return (
-    <section className={moduleTiempo.divPrincipal}>
+    <>
+    <main className={moduleTiempo.divPrincipal}>
       <div className={moduleTiempo.divbotonIcono}>
         <button className={moduleTiempo.boton} onClick={() => setIsSearchOpen(true)}>Search for places</button>
         <img src={imagenPrecision} alt="Icono de precision" className={moduleTiempo.iconoPrecision} />
@@ -37,7 +39,9 @@ const Tiempo = () => {
       <div className={moduleTiempo.divOtrosResultados}>
         <ResultadoOtrasCarac data={data} />
       </div>
-    </section>
+    </main>
+    <Footer />
+    </>
   )
 }
 
