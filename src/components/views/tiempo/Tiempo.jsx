@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import imagenPrecision from "../../../iconos/precision.png"
 import { SearchContext } from '../../context/searchClose';
+import Loader from '../loader/Loader';
 import ResultadoBusqueda from '../resultadoBusqueda/ResultadoBusqueda';
 import ResultadoOtrasCarac from '../resultadoOtrasCarac/ResultadoOtrasCarac';
 import Search from '../search/Search';
@@ -10,8 +11,9 @@ const Tiempo = () => {
   let {
     isSearchOpen,
     setIsSearchOpen,
-    state,
+    ubicacion,
     data,
+    loading
   }=useContext(SearchContext)
   
   return (
@@ -26,7 +28,11 @@ const Tiempo = () => {
         }
       </div>
       <div className={moduleTiempo.divResultado}>
-        <ResultadoBusqueda data={data} state={state} /> 
+        {
+          loading 
+          ? <Loader />
+          : <ResultadoBusqueda data={data} state={ubicacion} /> 
+        }
       </div>
       <div className={moduleTiempo.divOtrosResultados}>
         <ResultadoOtrasCarac data={data} />

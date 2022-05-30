@@ -4,7 +4,7 @@ import iconoUbicacion from "../../../iconos/mapa.png"
 
 const ResultadoBusqueda = ({data, state}) => {
   //Primer letra en mayuscula para la ubicacion del clima
-  let ubicacionMayus = state.ciudad.charAt(0).toUpperCase()+state.ciudad.slice(1)
+  
   
   return (
     <>
@@ -17,7 +17,7 @@ const ResultadoBusqueda = ({data, state}) => {
                 </p>
                 <p className={moduleResultado.descripcionDia}>{data?.current?.weather[0].description}</p>
                 <p>Hoy - {new Date(data?.current?.dt).toDateString().slice(4,10)}</p>
-                <p><img src={iconoUbicacion} alt="Icono de precision" className={moduleResultado.iconoUbicacion} />{ubicacionMayus || "London"}</p>
+                <p><img src={iconoUbicacion} alt="Icono de precision" className={moduleResultado.iconoUbicacion} />{state || "London, GB"}</p>
             </div>
         </div>
     </>    

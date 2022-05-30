@@ -26,6 +26,9 @@
     line-height: 19px;
     color: #A09FB1;
 }
+.colorLetra {
+    text-align: center;
+}
 @media all and (min-width:1100px) {
     .divPrincipal {
         display: flex;

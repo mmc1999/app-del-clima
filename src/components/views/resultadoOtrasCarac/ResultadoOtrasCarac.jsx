@@ -14,7 +14,7 @@ const ResultadoOtrasCarac = ({data}) => {
         <div className={moduleResultadoCarac.divDias}>
             {
                 daily?.map((el, index) => 
-                    <DiasTemp key={index} el={el}  />
+                    <DiasTemp key={index} el={el} index={index+1} />
                 )
             }
         </div>
