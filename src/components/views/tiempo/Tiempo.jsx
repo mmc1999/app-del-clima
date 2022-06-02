@@ -10,7 +10,6 @@ import moduleTiempo from "./Tiempo.module.css"
 
 const Tiempo = () => {
   let {
-    isSearchOpen,
     setIsSearchOpen,
     ubicacion,
     data,
@@ -23,10 +22,7 @@ const Tiempo = () => {
       <div className={moduleTiempo.divbotonIcono}>
         <button className={moduleTiempo.boton} onClick={() => setIsSearchOpen(true)}>Search for places</button>
         <img src={imagenPrecision} alt="Icono de precision" className={moduleTiempo.iconoPrecision} />
-        {
-          isSearchOpen && <Search />
-          
-        }
+         <Search />
       </div>
       <div className={moduleTiempo.divResultado}>
         {

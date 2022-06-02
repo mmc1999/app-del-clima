@@ -11,7 +11,7 @@ const Search = () => {
     state,
   }=useContext(SearchContext)
   return (
-    <div className={`${moduleSearch.divPrincipal} ${isSearchOpen && moduleSearch.divTrue}`}>
+    <div className={`${moduleSearch.divPrincipal} ${isSearchOpen ? moduleSearch.divTrue : moduleSearch.divFalse}`}>
       <p onClick={() => setIsSearchOpen(false)} className={moduleSearch.cancelar}>X</p>
       <form onSubmit={handleSubmit} className={moduleSearch.formulario}>
         <input
