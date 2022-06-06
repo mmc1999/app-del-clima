@@ -1,6 +1,7 @@
 let arrayDias = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
-let diaDeHoy = new Date().getDay()
+
+let diaDeHoy = new Date().getDay();
 export const contadorDias = (indice) => {
     if(indice==8) {
         indice=1
@@ -13,4 +14,4 @@ export const contadorDias = (indice) => {
     }
     
     return arrayDias[suma]
-}
+};

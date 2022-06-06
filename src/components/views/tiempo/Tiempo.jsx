@@ -10,6 +10,7 @@ import moduleTiempo from "./Tiempo.module.css"
 
 const Tiempo = () => {
   let {
+    
     setIsSearchOpen,
     ubicacion,
     data,

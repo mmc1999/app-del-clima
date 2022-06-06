@@ -3,6 +3,7 @@ import { contadorDias } from '../../../helpers/dias'
 import moduleDias from "./DiasTemp.module.css"
 
 const DiasTemp = ({el, index}) => {
+  
   return (
     <div className={moduleDias.divPrincipal}>
         <p className={moduleDias.colorLetra}>{contadorDias(index)}</p>
